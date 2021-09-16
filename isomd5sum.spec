@@ -1,6 +1,6 @@
 Name:      isomd5sum
 Version:   1.2.3
-Release:   5
+Release:   6
 Epoch:     1
 Summary:   Utilities for working with md5sum implanted in ISO images
 License:   GPLv2+
@@ -74,6 +74,9 @@ PYTHON=%{__python3} make DESTDIR=%{buildroot} install-bin install-devel install-
 %{_mandir}/man1/*
 
 %changelog
+* Thu Sep 16 2021 xinminst <xuzhiling19991120@163.com> - 1:1.2.3-6
+- adapt riscv64
+
 * Thu Oct 29 2020 wangchen <wangchen137@huawei.com> - 1:1.2.3-5
 - Remove python2
 
