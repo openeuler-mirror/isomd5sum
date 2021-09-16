@@ -60,7 +60,11 @@ PYTHON=%{__python3} make DESTDIR=%{buildroot} install-bin install-devel install-
 
 %files devel
 %{_includedir}/*.h
+%ifnarch riscv64
 %{_libdir}/*.a
+%else
+%{_prefix}/lib/*.a
+%endif
 %{_datadir}/pkgconfig/isomd5sum.pc
 
 %files -n python3-isomd5sum
